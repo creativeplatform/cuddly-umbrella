@@ -46,7 +46,7 @@ contract Contract is ERC721Drop, PlatformFee, VRFConsumerBaseV2{
         s_owner = msg.sender;
         s_subscriptionId = subscriptionId;
         // The number of cards in the deck
-        remaining = 10; 
+        remaining = 10000; 
     }
     function _canSetPlatformFeeInfo() internal view override returns (bool) {
         return msg.sender == owner();
